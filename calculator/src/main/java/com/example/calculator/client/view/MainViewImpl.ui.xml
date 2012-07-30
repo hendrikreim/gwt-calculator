@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		
+		.error {
+			color: red;
+			font-size: 18px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<h1>Welcome to german numerals calculator!</h1>
+		<h2>please type e.g.: dreihundertzweiundneunzig mal 7</h2>
+		<center>
+			<g:HorizontalPanel>
+				<g:TextArea ui:field="inputArea" visibleLines="5" width="500px" />
+				<g:TextArea ui:field="resultArea" visibleLines="5" width="200px" enabled="false" />
+			</g:HorizontalPanel>
+			<g:Label styleName="{style.error}" ui:field="label" />
+			<g:Button styleName="{style.important}" ui:field="button" text="calculate" />
+		</center>
+	</g:HTMLPanel>
+</ui:UiBinder> 
